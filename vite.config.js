@@ -9,6 +9,7 @@ export default defineConfig({
     proxy: {
       "/api": {
         target: "https://bluestar-server.onrender.com",
+        changeOrigin: true,
       },
     },
   },
